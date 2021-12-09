@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript change image onclick event
+</title>
+<style type="text/css">
+	h2 {
+    text-align: center;
+    font-size: 30px;
+	}
+	img#getImage {
+    width: 300px;
+    height: auto;  
+    border: 4px solid #a1a1a1;  
+	}
+	div {
+    text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p>Saad Ali Zafar 32485</p>
+	
+		<h2>Change image onclick</h2>
+		<img src="Internet of Things.jpg" id="getImage">
+    	
+    </div>
+    <div>
+    	<input type="button" onclick="imagefun()" value="Change Image">
+    </div>
+    <script>
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("Internet of Things.jpg")) {
+                Image_Id.src ="Rop.png"
+			
+            }
+            else {
+                Image_Id.src = "im1.jpg";
+            }
+        }        
+    </script>
+
+</body>
+</html>
